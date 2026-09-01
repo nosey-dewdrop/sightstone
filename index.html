@@ -1,0 +1,19 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>moved · dewsletter</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://nosey-dewdrop.github.io/dewsletter/">
+<p style="font-family:Georgia,serif">this moved to <a id="l" href="https://nosey-dewdrop.github.io/dewsletter/">dewsletter</a>.</p>
+<script>
+/* The project was renamed sightstone -> dewsletter. GitHub Pages does NOT
+   redirect a renamed project site, so every link in every mail already sent
+   answered 404 -- including the unsubscribe link, which is the one link a
+   mail is never allowed to break. This repo exists only to forward them, and
+   it carries the path AND the query string, because those links are keyed by
+   a token and a redirect that drops it is the same as a dead link. */
+var base = 'https://nosey-dewdrop.github.io/dewsletter';
+var rest = location.pathname.replace(/^\/sightstone/, '') || '/';
+var to = base + rest + location.search + location.hash;
+document.getElementById('l').href = to;
+location.replace(to);
+</script>
